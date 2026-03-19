@@ -122,7 +122,7 @@ export default function Home() {
               <Button
                 asChild
                 variant="outline"
-                className="rounded-full border-white/40 text-white hover:bg-white/10 font-semibold px-7 py-3 h-auto"
+                className="rounded-full bg-transparent border-2 border-white text-white hover:bg-white hover:text-navy font-semibold px-7 py-3 h-auto transition-colors"
                 data-ocid="hero.secondary_button"
               >
                 <Link to="/about">Learn More</Link>

@@ -24,7 +24,7 @@ export default function Header() {
       data-ocid="header.panel"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
+        <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link
             to="/"
@@ -34,7 +34,7 @@ export default function Header() {
             <img
               src="/assets/uploads/logo-nkb.png"
               alt="NKB Biopharma"
-              className="h-12 w-auto object-contain"
+              className="h-16 w-auto object-contain"
             />
           </Link>
 
