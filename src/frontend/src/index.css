@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Bricolage+Grotesque:wght@400;600;700;800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Navy: #0B2D3A -> oklch(~22% 0.055 220) */
+    --background: 100% 0 0;
+    --foreground: 22% 0.055 220;
+
+    --card: 100% 0 0;
+    --card-foreground: 22% 0.055 220;
+
+    --popover: 100% 0 0;
+    --popover-foreground: 22% 0.055 220;
+
+    /* Teal: #2E8C84 -> oklch(~57% 0.09 185) */
+    --primary: 57% 0.09 185;
+    --primary-foreground: 100% 0 0;
+
+    /* Light navy/dark: #0B2D3A -> oklch(22% 0.055 220) */
+    --secondary: 22% 0.055 220;
+    --secondary-foreground: 100% 0 0;
+
+    /* Muted: light gray #F5F7F9 -> oklch(~97% 0.005 220) */
+    --muted: 97% 0.005 220;
+    --muted-foreground: 47% 0.03 220;
+
+    /* Mint: #E6F3F1 -> oklch(~95% 0.02 185) */
+    --accent: 95% 0.02 185;
+    --accent-foreground: 22% 0.055 220;
+
+    --destructive: 50% 0.22 25;
+    --destructive-foreground: 100% 0 0;
+
+    --border: 92% 0.008 220;
+    --input: 92% 0.008 220;
+    --ring: 57% 0.09 185;
+
+    --radius: 0.75rem;
+
+    /* Custom tokens */
+    --navy: 22% 0.055 220;
+    --teal: 57% 0.09 185;
+    --mint: 95% 0.02 185;
+    --body-text: 47% 0.025 220;
+    --heading-text: 20% 0.05 220;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-body;
+    -webkit-font-smoothing: antialiased;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-display;
+  }
+}
+
+@layer utilities {
+  .text-navy {
+    color: oklch(var(--navy));
+  }
+  .text-teal {
+    color: oklch(var(--teal));
+  }
+  .text-body {
+    color: oklch(var(--body-text));
+  }
+  .text-heading {
+    color: oklch(var(--heading-text));
+  }
+  .bg-navy {
+    background-color: oklch(var(--navy));
+  }
+  .bg-teal {
+    background-color: oklch(var(--teal));
+  }
+  .bg-mint {
+    background-color: oklch(var(--mint));
+  }
+  .border-teal {
+    border-color: oklch(var(--teal));
+  }
+}
