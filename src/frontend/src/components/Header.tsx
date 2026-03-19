@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Link, useRouterState } from "@tanstack/react-router";
-import { FlaskConical, Menu, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { AnimatePresence, motion } from "motion/react";
 import { useState } from "react";
 
@@ -28,20 +28,14 @@ export default function Header() {
           {/* Logo */}
           <Link
             to="/"
-            className="flex items-center gap-2 shrink-0"
+            className="flex items-center shrink-0"
             data-ocid="header.link"
           >
-            <div className="w-9 h-9 rounded-lg bg-teal flex items-center justify-center">
-              <FlaskConical className="w-5 h-5 text-white" />
-            </div>
-            <div className="leading-none">
-              <span className="text-xl font-bold font-display text-navy">
-                NKB
-              </span>
-              <span className="block text-[10px] font-semibold tracking-[0.2em] text-teal uppercase">
-                Pharma
-              </span>
-            </div>
+            <img
+              src="/assets/uploads/logo-nkb.png"
+              alt="NKB Biopharma"
+              className="h-12 w-auto object-contain"
+            />
           </Link>
 
           {/* Desktop Nav */}
